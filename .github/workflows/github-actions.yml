@@ -13,16 +13,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run Jest tests
-        run: npm test
-
-  testspace:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v3
+      - name: Install testspace
       - uses: testspace-com/setup-testspace@v1
         with:
           domain: ${{github.repository_owner}}
+
+      - name: Run Jest tests
+        run: npm test
+
       - name: Publish Results to Testspace
         run: testspace "path/to/*.xml"
