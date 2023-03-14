@@ -3,10 +3,8 @@ name: Jest
 on: [push]
 
 jobs:
-
   Install Testspace:
     runs-on: ubuntu-latest
-
 
     steps:
       - uses: actions/checkout@v3
@@ -32,6 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ always() }}
     needs: Run Jest Tests
-    
+
+    steps:
       - name: Publish Results to Testspace
         run: testspace test*.xml
