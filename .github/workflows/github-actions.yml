@@ -3,7 +3,7 @@ name: Jest
 on: [push]
 
 jobs:
-  install-testspace:
+  run-tests:
     runs-on: ubuntu-latest
 
     steps:
@@ -12,25 +12,13 @@ jobs:
         with:
           domain: ${{github.repository_owner}}
 
-  run-jest-tests:
-    runs-on: ubuntu-latest
-    needs: install-testspace
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
       - name: Install dependencies
         run: npm install
 
       - name: Run Jest tests
         run: npm test
 
-  publish-results:
-    runs-on: ubuntu-latest
-    if: ${{ always() }}
-    needs: [run-jest-tests, install-testspace]
-
-    steps:
       - name: Publish Results to Testspace
-        run: testspace test*.xml
+        run: |
+          testspace ./results/*.xml
+        if: always()
