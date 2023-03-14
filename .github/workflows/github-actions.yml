@@ -17,8 +17,9 @@ jobs:
         run: npm test
 
   testspace:
-    needs: jest
     runs-on: ubuntu-latest
+    needs: jest
+    if: ${{ always() }}
 
     steps:
       - uses: actions/checkout@v3
