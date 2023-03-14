@@ -30,8 +30,8 @@ jobs:
 
   Publish results:
     runs-on: ubuntu-latest
+    if: ${{ always() }}
     needs: Run Jest Tests
-        if: ${{ always() }}
-
+    
       - name: Publish Results to Testspace
         run: testspace test*.xml
