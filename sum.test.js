@@ -15,6 +15,6 @@ test('should be flaky', () => {
         expect(sum(1, 2)).toBe(3)
     }
     else {
-        expect(sum(1, 2)).toBe(0)
+        expect(sum(1, 2)).toBe(1)
     }
 })
