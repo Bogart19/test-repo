@@ -6,17 +6,19 @@ describe('the tests', () => {
     });
 
     test('should fail', () => {
-        expect(sum(1, 2)).toBe(5);
+        // Make the test pass despite the name to see test results on successful pass
+        expect(sum(1, -2)).toBe(-1);
     })
 
     test('should be flaky', () => {
-        
-        let randomNumber = Math.floor(Math.random() * 10);
-        if (randomNumber % 2 == 0) {
-            expect(sum(1, 2)).toBe(3)
-        }
-        else {
-            expect(sum(1, 2)).toBe(1)
-        }
+        // Make the test pass consistently despite the name to see test results on successful pass
+        // let randomNumber = Math.floor(Math.random() * 10);
+        // if (randomNumber % 2 == 0) {
+        //     expect(sum(1, 2)).toBe(3)
+        // }
+        // else {
+        //     expect(sum(1, 2)).toBe(1)
+        // }
+        expect(true)
     });
 });
