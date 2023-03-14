@@ -20,5 +20,5 @@ jobs:
 
       - name: Publish Results to Testspace
         run: |
-          testspace ./results/*.xml
+          testspace test-results.xml
         if: always()
