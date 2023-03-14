@@ -14,7 +14,7 @@ jobs:
 
   run-jest-tests:
     runs-on: ubuntu-latest
-    needs: Install Testspace
+    needs: install-testspace
 
     steps:
       - name: Checkout code
@@ -29,7 +29,7 @@ jobs:
   publish-results:
     runs-on: ubuntu-latest
     if: ${{ always() }}
-    needs: run-jest-tests
+    needs: [run-jest-tests, install-testspace]
 
     steps:
       - name: Publish Results to Testspace
