@@ -6,12 +6,20 @@ jobs:
   jest:
     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+  steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-      - name: Install dependencies
-        run: npm install
+    - name: Install dependencies
+      run: npm install
 
-      - name: Run Jest tests
-        run: npm test
+    - name: Run Jest tests
+      run: npm test
+      
+  steps:
+    - uses: actions/checkout@v3
+    - uses: testspace-com/setup-testspace@v1
+      with:
+        domain: ${{github.repository_owner}}
+    - name: Publish Results to Testspace
+      run: testspace "path/to/*.xml"
