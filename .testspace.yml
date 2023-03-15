@@ -14,5 +14,6 @@
 # More details can be found at https://help.testspace.com/manual/configuration
 
 manual:
-#  path: "manual-tests"
-#  publish-path: "manual results"
+
+release:
+  - "manual-test-cases"

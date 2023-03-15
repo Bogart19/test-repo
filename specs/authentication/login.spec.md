@@ -23,7 +23,7 @@ Uninstall the app
 1. Long press on the app icon
 2. Tap uninstall
 
-## (POS) User can log in with email
+## User can log in with email
 
 Ensure that a user can log into the app using a valid email address.
 
@@ -33,7 +33,7 @@ Ensure that a user can log into the app using a valid email address.
 
 The user should see the landing page, and it should display their login email.
 
-## (NEG) User cannot log in with an unregistered email
+## User cannot log in with an unregistered email
 
 Ensure that users that have not registered are unable to login and are presented with a useful error message.
 
