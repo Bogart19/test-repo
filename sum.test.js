@@ -1,24 +1,16 @@
 const sum = require('./sum');
 
 describe('the tests', () => {
-    test('should pass', () => {
+    test('should add two whole numbers correctly', () => {
         expect(sum(1, 2)).toBe(3);
     });
 
-    test('should fail', () => {
+    test('should add two negative numbers correctly', () => {
         // Make the test pass despite the name to see test results on successful pass
-        expect(sum(1, -2)).toBe(-1);
+        expect(sum(-1, -2)).toBe(-3);
     })
 
-    test('should be flaky', () => {
-        // Make the test pass consistently despite the name to see test results on successful pass
-        // let randomNumber = Math.floor(Math.random() * 10);
-        // if (randomNumber % 2 == 0) {
-        //     expect(sum(1, 2)).toBe(3)
-        // }
-        // else {
-        //     expect(sum(1, 2)).toBe(1)
-        // }
-        expect(true)
+    test('should add two decimals correctly', () => {
+        expect(sum(1.0, 5.2)).toBe(6.2)
     });
 });
