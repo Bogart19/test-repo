@@ -1,0 +1,18 @@
+### TestSpace yml config example
+
+# manual:
+#  path: "/path/to/thespecs" # optional path to specs root, defaults to "specs"
+#  publish_path: "path/to/report" # optional Testspace result's path to publish status to, defaults to ""
+#  issues:
+#    provider: "jira:project-key" # optional, defaults to "github:" (current org/repo)
+#    label: # optional, defaults to "testspace"
+
+# release: "*_rel" # optional one or more branch-wildcard entries
+
+### Details
+# manual: is the minimum required config to be able to use the manual test cases with this tool
+# More details can be found at https://help.testspace.com/manual/configuration
+
+manual:
+  path: "manual-tests"
+  publish-path: "manual results"
