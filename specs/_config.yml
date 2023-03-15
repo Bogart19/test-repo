@@ -1,0 +1,5 @@
+title: Spec Preview
+defaults:
+  - values:
+      layout: "default"
+theme: just-the-docs
