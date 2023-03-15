@@ -18,6 +18,10 @@ This is a setup fixture. This can only be defined once per file, and can be plac
 - Do a thing here.
 - Do a thing there.
 
+## [teardown]
+
+This is a teardown fixture. This is defined once per file and will display after each case.
+
 ## Case 1
 
 Write a case description here.
@@ -32,10 +36,6 @@ Write a case description here.
   - sub-step 2 instruction
 
   Example reference of {{ spec.testvar }}
-
-## [teardown]
-
-This is a teardown fixture. This can be presented after each case.
 
 ## Case 2
 
