@@ -161,3 +161,7 @@ dist
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,node
+
+# Jekyll local building artifacts
+_site
+.jekyll-cache

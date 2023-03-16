@@ -1,0 +1,7 @@
+source "https://rubygems.org"
+
+gem "jekyll", "4.2.0" # 4.2.1+ does not work in Codespaces with the "just-the-docs" theme
+gem "just-the-docs"
+
+gem "webrick", "~> 1.7"  # required for ruby 3.0+
+gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
