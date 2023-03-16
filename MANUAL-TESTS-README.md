@@ -95,6 +95,8 @@ If a file is placed in the root spec folder when other folders are in use, it wi
 
 It is possible to automatically generate issues on test failures through this UI, but appears to only support GitHub Issues and JIRA.
 
+> It seems like by default, any tests marked as failed will generate Github Issues, as can be seen [here| https://github.com/Bogart19/test-repo/issues]. To bypass this, when marking a test as failed you must update the dropdown next to `issue` to `do not report`. Note that failures in manual test runs will still trigger a testspace notification to the repo owners.
+
 ## Viewing Results
 
 View results under Results tab for the branch executed on. This view shows both the automated and manual test execution details, including any re-run manual tests.
