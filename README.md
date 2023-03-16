@@ -2,11 +2,11 @@
 
 ## Overview
 
-TestSpace takes generated `.xml` outputs from test runs and uploads them to a linked testspace website to provide a dashboard view of automated tests. The full list of supported data formats can be found [here|https://help.testspace.com/reference/data-formats#test-output-formats].
+TestSpace takes generated `.xml` outputs from test runs and uploads them to a linked testspace website to provide a dashboard view of automated tests. The full list of supported data formats can be found [here](https://help.testspace.com/reference/data-formats#test-output-formats).
 
 ## Details of this Demo
 
-A very simple function was written and has some example tests written using Jest. Since Jest doesn't provide a supported style output, this project also uses [jest-junit|https://www.npmjs.com/package/jest-junit] to generate the output in the junit format.
+A very simple function was written and has some example tests written using Jest. Since Jest doesn't provide a supported style output, this project also uses [jest-junit](https://www.npmjs.com/package/jest-junit) to generate the output in the junit format.
 
 A basic github actions workflow has been set up to try out the reporting, and does the following:
 
@@ -25,7 +25,7 @@ npm run test-ci
 
 ## Seeing the Dashboard
 
-See the different branches that have been pushed and ran [here|https://bogart19.testspace.com/projects/67712/spaces].
+See the different branches that have been pushed and ran [here](https://bogart19.testspace.com/projects/67712/spaces).
 
 The `test-workflow` branch shows the dashboard view of automated tests that have passed, failed, and been flaky and ends with tests finally passing.
 
@@ -33,4 +33,4 @@ The `manual-test-cases` branch shows how manual tests looks in the tool as well 
 
 ## Custom Dashboards
 
-Testspace provides a [web api|https://help.testspace.com/reference/web-api] that could be used to create a custom dashboard.
+Testspace provides a [web api](https://help.testspace.com/reference/web-api) that could be used to create a custom dashboard.

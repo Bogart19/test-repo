@@ -45,7 +45,7 @@ Writing a simple test after the markdown is just using basic markdown.
 
 Typical markdown - lists, tables, general formatting etc generally works.
 
-The main difference is that you can use the [template language|https://help.testspace.com/manual/implementation-spec#template-language], Liquid to utilize both custom and global variables. This includes some basic logic based on the spec to minimize repeated text. To see the documentation on Liquid, [find it on Shopify's domain|https://shopify.github.io/liquid/].
+The main difference is that you can use the [template language](https://help.testspace.com/manual/implementation-spec#template-language), Liquid to utilize both custom and global variables. This includes some basic logic based on the spec to minimize repeated text. To see the documentation on Liquid, [find it on Shopify's domain](https://shopify.github.io/liquid/).
 
 ### Fixtures
 
@@ -59,7 +59,7 @@ Testspace has a concept of fixtures, where you can create repeated setup and tea
 
 ### Previewing Tests
 
-Markdown formatting and some loose similarities to actual view in Testspace can be previewed using [Jekyll|https://help.testspace.com/manual/desktop-preview]. Note that this is not at all a 1:1 and many aspects of the preview don't work the same as they actually do in Testspace, so your mileage may vary on usefulness.
+Markdown formatting and some loose similarities to actual view in Testspace can be previewed using [Jekyll](https://help.testspace.com/manual/desktop-preview). Note that this is not at all a 1:1 and many aspects of the preview don't work the same as they actually do in Testspace, so your mileage may vary on usefulness.
 
 Note that the `Gemfile`, `_config.yml`, and `index.md` files in this repo are required for use with Jekyll.
 
@@ -95,7 +95,7 @@ If a file is placed in the root spec folder when other folders are in use, it wi
 
 It is possible to automatically generate issues on test failures through this UI, but appears to only support GitHub Issues and JIRA.
 
-> It seems like by default, any tests marked as failed will generate Github Issues, as can be seen [here| https://github.com/Bogart19/test-repo/issues]. To bypass this, when marking a test as failed you must update the dropdown next to `issue` to `do not report`. Note that failures in manual test runs will still trigger a testspace notification to the repo owners.
+> It seems like by default, any tests marked as failed will generate Github Issues, as can be seen [here](https://github.com/Bogart19/test-repo/issues). To bypass this, when marking a test as failed you must update the dropdown next to `issue` to `do not report`. Note that failures in manual test runs will still trigger a testspace notification to the repo owners unless they have specifically opted out in notification settings from within Testspace.
 
 ## Viewing Results
 
