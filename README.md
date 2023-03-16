@@ -30,3 +30,7 @@ See the different branches that have been pushed and ran [here|https://bogart19.
 The `test-workflow` branch shows the dashboard view of automated tests that have passed, failed, and been flaky and ends with tests finally passing.
 
 The `manual-test-cases` branch shows how manual tests looks in the tool as well as how they also display in the dashboard alongside automated tests. See `MANUAL-TESTS-README` for more details on how the manual test case setup and display works.
+
+## Custom Dashboards
+
+Testspace provides a [web api|https://help.testspace.com/reference/web-api] that could be used to create a custom dashboard.

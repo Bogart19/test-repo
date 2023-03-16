@@ -35,19 +35,33 @@ Variables can be input into the markdown using the format of `{{ spec.VariableNa
 
 ### Writing a Test
 
+Writing a simple test after the markdown is just using basic markdown.
+
+```
+# Titles will use H1
+
+## Test case names use H2.
+```
+
+Typical markdown - lists, tables, general formatting etc generally works.
+
+The main difference is that you can use the [template language|https://help.testspace.com/manual/implementation-spec#template-language], Liquid to utilize both custom and global variables. This includes some basic logic based on the spec to minimize repeated text. To see the documentation on Liquid, [find it on Shopify's domain|https://shopify.github.io/liquid/].
+
 ### Fixtures
 
 Testspace has a concept of fixtures, where you can create repeated setup and teardown steps within a given test spec. These can be put anywhere in the file, and will display on every test case within the spec.
 
 ```
 ## [setup]
-```
 
-```
 ## [teardown]
 ```
 
 ### Previewing Tests
+
+Markdown formatting and some loose similarities to actual view in Testspace can be previewed using [Jekyll|https://help.testspace.com/manual/desktop-preview]. Note that this is not at all a 1:1 and many aspects of the preview don't work the same as they actually do in Testspace, so your mileage may vary on usefulness.
+
+Note that the `Gemfile`, `_config.yml`, and `index.md` files in this repo are required for use with Jekyll.
 
 ### Viewing Tests in Testspace
 
@@ -61,9 +75,9 @@ Once in TestSpace:
 
 ## Executing Tests
 
-> By default, you can only execute tests on `main`. This can be changed in the `.testspace.yml` configuration file.
+> By default, you can only execute tests on `main`. This can be changed in the `.testspace.yml` configuration file. For the sake of demoing, the `manual-test-cases` branch has been configured to allow for test case execution.
 
-To execute tests
+To execute tests:
 
 1. Click on the branch you want to run tests on - see `manual-test-cases` branch.
 1. Click on Manual tab
@@ -74,6 +88,8 @@ You can select each Case that has been set up and indicate the results of the te
 ### Organization
 
 You can create new folders in the `specs` folder to organize tests. These are automatically detected and will be displayed as long as a test file exists within it.
+
+If a file is placed in the root spec folder when other folders are in use, it will be listed under `ungrouped` (see roottest.spec.md).
 
 ### Generating Issues
 

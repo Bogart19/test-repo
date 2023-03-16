@@ -40,7 +40,7 @@ Ensure that users that have not registered are unable to login and are presented
 1. Launch the app
 2. Login with {{ spec.unregisteredEmail }}
 
-Expected Results:
+_Expected Results_:
 
 - User is not logged in
 - User is presented with an error message indicating their email is not valid
